@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bachillerato Técnico en Salud</title>
+  <style>
+    body { 
+      font-family: Arial; 
+      padding: 20px; 
+      background: linear-gradient(100deg, #000000 48%, #FFFF00 10%); 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: flex-start; 
+    }
+    .contenido {
+      width: 55%;
+    }
+    h1 { color: white; }
+	p { color: white; }
+	h2 { color: white; }
+    ul { line-height: 1.8; color: white; }
+    img { width: 100%; max-width: 500px; border-radius: 10px; }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-gap: 70px;
+      width: 50%;
+	   margin-left: 50px; /* Mover a la derecha */
+	  margin-top: 50px; /* Mover hacia abajo */
+    }
+    .collage img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      transform: rotate(-10deg);
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    .collage img:hover {
+      transform: scale(2.0) rotate(0deg);
+      box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    }
+
+    .video {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .video video {
+      width: 500px;
+      border-radius: 25px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .botones {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenido">
+    <h1>Bachillerato Técnico en Salud</h1>
+<p>Este bachillerato ofrece una formación académica y técnica orientada al área de la salud. Los estudiantes adquieren conocimientos en primeros auxilios, salud comunitaria y técnicas básicas de atención, preparándolos para continuar estudios superiores o para integrarse al campo laboral con una base sólida.
+</p>
+
+    <h2>Materias</h2>
+    <ul>
+      <li>Matemática</li>
+      <li>Lenguaje y Literatura</li>
+      <li>Estudios Sociales</li>
+      <li>Ciencias Naturales</li>
+      <li>Inglés</li>
+      <li>Informática</li>
+	  <li>Orientación para la vida</li>
+      <li>Educación Física</li>
+    </ul>
+
+    <img src="img/sal.jpg" alt="Bachillerato Técnico en Salud">
+
+    <div class="botones">
+      <a href="index.html">Página principal</a>
+    </div>
+  </div>
+
+  <div class="collage">
+    <img src="img/11.jpg" alt="Imagen 1">
+    <img src="img/22.jpg" alt="Imagen 2">
+    <img src="img/33.jpg" alt="Imagen 3">
+    <img src="img/44.jpg" alt="Imagen 4">
+	<img src="img/55.jpg" alt="Imagen 4">
+	<img src="img/66.jpg" alt="Imagen 4">
+
+    <!-- Video debajo del collage -->
+    <div class="video">
+      <video src="video/salud.mp4" controls></video>
+    </div>
+  </div>
+
+</body>
+</html>

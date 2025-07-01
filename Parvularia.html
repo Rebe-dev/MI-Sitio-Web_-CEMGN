@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Primera Infancia</title>
+  <style>
+    body { 
+      font-family: Arial; 
+      padding: 20px; 
+      background: linear-gradient(100deg, #000000 48%, #FFFF00 10%); 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: flex-start; 
+    }
+    .contenido {
+      width: 55%;
+    }
+    h1 { color: white; }
+	p { color: white; }
+	h2 { color: white; }
+    ul { line-height: 1.8; color: white; }
+    img { width: 100%; max-width: 500px; border-radius: 10px; }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-gap: 70px;
+      width: 50%;
+	  margin-left: 50px; /* Mover a la derecha */
+	  margin-top: 200px; /* Mover hacia abajo */
+    }
+    .collage img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      transform: rotate(-10deg);
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    .collage img:hover {
+      transform: scale(2.0) translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    .video {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .video video {
+      width: 400px;
+      border-radius: 25px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .botones {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenido">
+    <h1>Primera Infancia</h1>
+    <p>Este nivel educativo está diseñado para brindar una formación integral a los niños en sus primeros años. Se promueve el desarrollo emocional, social, cognitivo y motor a través de actividades lúdicas y pedagógicas que preparan a los estudiantes para la siguiente etapa escolar.
+    </p>
+
+    <div class="section">
+      <h2>Materias en Primera Infancia</h2>
+      <ul>
+        <li>Creatividad</li>
+        <li>Lectura</li>
+        <li>Caligrafía</li>
+      </ul>
+      <img src="img/parvularia.jpg" alt="Parvularia">
+    </div>
+
+    <div class="botones">
+      <a href="index.html">Página principal</a>
+    </div>
+  </div>
+
+  <div class="collage">
+    <img src="img/i1.jpg" alt="Imagen 1">
+    <img src="img/i2.jpg" alt="Imagen 2">
+    <img src="img/i3.jpg" alt="Imagen 3">
+    <img src="img/i4.jpg" alt="Imagen 4">
+
+</body>
+</html>

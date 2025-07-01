@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>COMPLEJO EDUCATIVO "MARCOS GÓMEZ NÚÑEZ"</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      background-color: #FFFF00;
+      color: Black;
+      padding: 50px;
+      margin: 0;
+    }
+
+    .main-image {
+      margin: 20px auto;
+      max-width: 20%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: Yellow;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 10px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>COMPLEJO EDUCATIVO "MARCOS GÓMEZ NÚÑEZ"</h1>
+  <img src="img/portada.jpg" alt="Imagen Principal" class="main-image">
+
+
+  <div class="grid">
+    <a href="parvularia.html" target="_blank">
+      <div class="card">
+        <img src="img/parvularia.jpg" alt="Parvularia y Noveno">
+        <h3>Primera Infacia </h3>
+      </div>
+    </a>
+	
+    <a href="noveno.html" target="_blank">
+      <div class="card">
+        <img src="img/noveno.jpg" alt="Parvularia y Noveno">
+        <h3> Basica</h3>
+      </div>
+    </a>
+
+    <a href="bachillerato_general.html" target="_blank">
+      <div class="card">
+        <img src="img/general.jpg" alt="Bachillerato General">
+        <h3>Bachillerato General</h3>
+      </div>
+    </a>
+
+    <a href="tecnico_salud.html" target="_blank">
+      <div class="card">
+        <img src="img/salud.jpg" alt="Bachillerato Técnico en Salud">
+        <h3>Bachillerato Técnico en Salud</h3>
+      </div>
+    </a>
+
+    <a href="automotriz.html" target="_blank">
+      <div class="card">
+        <img src="img/automotriz.jpg" alt="Bachillerato Automotriz">
+        <h3>Bachillerato Automotriz</h3>
+      </div>
+    </a>
+
+    <a href="administrativo_contable.html" target="_blank">
+      <div class="card">
+        <img src="img/contable.jpg" alt="Bachillerato Administrativo Contable">
+        <h3>Bachillerato Administrativo Contable</h3>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>

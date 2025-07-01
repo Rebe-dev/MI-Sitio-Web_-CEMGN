@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> Básica</title>
+  <style>
+     body { 
+      font-family: Arial; 
+      padding: 20px; 
+      background: linear-gradient(100deg, #000000 48%, #FFFF00 10%); 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: flex-start; 
+    }
+    .contenido {
+      width: 55%;
+    }
+    h1 { color: white; }
+	p { color: white; }
+	h2 { color: white; }
+    ul { line-height: 1.8; color: white; }
+    img { width: 100%; max-width: 500px; border-radius: 10px; }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-gap: 70px;
+      width: 50%;
+	   margin-left: 100px; /* Mover a la derecha */
+	  margin-top: 150px; /* Mover hacia abajo */
+    }
+    .collage img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      transform: rotate(-10deg);
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    .collage img:hover {
+      transform: scale(2.0) rotate(0deg);
+      box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    }
+
+    .video {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .video video {
+      width: 330px;
+      border-radius: 25px;
+      box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .botones {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenido">
+    <h1>Básica</h1>
+<p>La educación básica abarca desde cuarto grado hasta noveno grado y proporciona a los estudiantes una formación académica completa en diversas áreas del conocimiento. Se desarrollan competencias fundamentales como el pensamiento crítico, la comunicación, la resolución de problemas y la formación en valores.
+</p>
+
+    <div class="section">
+	<h2>Materias de primero a segundo grado</h2>
+      <ul>
+        <li>calculemos</li>
+        <li>Ciencia y Tecnología</li>
+        <li>Ciudadanía y Valores</li>
+        <li>Comunicaciones</li>
+      </ul>
+	
+	<h2>Materias de cuarto a sexto grado</h2>
+      <ul>
+        <li>Aritmética y finanzas </li>
+        <li>Comunicación y Literatura</li>
+        <li>Ciencia y Tecnología</li>
+        <li>Ciudadanía y Valores</li>
+        <li>Educación Física</li>
+      </ul>
+	  
+      <h2>Materias de Séptimo a Noveno grado</h2>
+      <ul>
+        <li>Lenguaje y Literatura</li>
+        <li>Matemáticas y Datos</li>
+        <li>Ciencia y Tecnología</li>
+        <li>Ciudadanía y Valores</li>
+        <li>Inglés</li>
+		<li>Informática</li>
+		
+      </ul>
+      <img src="img/noveno.jpg" alt="Noveno Grado">
+    </div>
+
+    <div class="botones">
+      <a href="index.html">Página principal</a>
+    </div>
+  </div>
+
+  <div class="collage">
+   <img src="img/m5.jpg" alt="Imagen 1">
+    <img src="img/m6.jpg" alt="Imagen 1">
+	 <img src="img/m7.jpg" alt="Imagen 1">
+	  <img src="img/m8.jpg" alt="Imagen 1">
+    <img src="img/m1.jpg" alt="Imagen 1">
+    <img src="img/m2.jpg" alt="Imagen 2">
+    <img src="img/m3.jpg" alt="Imagen 3">
+    <img src="img/m4.jpg" alt="Imagen 4">
+
+    <!-- Video debajo del collage -->
+    <div class="video">
+      <video src="video/noveno.mp4" controls></video>
+    </div>
+  </div>
+
+</body>
+</html>
